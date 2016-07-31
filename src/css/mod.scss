@@ -1,0 +1,42 @@
+.mod {
+	.col {
+		float: left;
+		margin-left: 10%;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	
+	.mod-add-slide {
+		width: 220px;
+		min-height: 355px;
+		
+		.thumb {
+			margin-bottom: 5px;
+			
+			img {
+				width: 100%;
+			}
+		}
+		
+		input[type=text], input[type=file] {
+			display: block;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		
+		input[type=text] {
+			padding: 1px 8px 4px 8px;
+		}
+		
+		.cancel-btn {
+			margin-left: 10px;
+		}
+	}
+	
+	.clear {
+		clear: both;
+	}
+}

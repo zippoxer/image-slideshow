@@ -1,0 +1,114 @@
+.carousel {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	
+	.slides {
+		width: 100%;
+		height: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		
+		.slide {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			
+			.container {
+				position: relative;
+				
+				.slide-info {
+					position: absolute;
+					top: 35%;
+					left: 10%;
+					width: 40%;
+					font-family: 'Open Sans', sans-serif;
+					
+					white-space: normal;
+					font-weight: 400;
+					color: white;
+					text-transform: uppercase;
+					text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); 
+					line-height: 1;
+					
+					.slide-title {
+						font-size: 42px;
+					}
+					
+					.slide-subtitle {
+						margin-top: 40px;
+						font-size: 24px;
+					}
+				}
+				
+				.slide-link {
+					position: absolute;
+					top: 50%;
+					right: 10%;
+					width: 220px;
+					height: 38px;
+					border: solid 1px #f0f0f0;
+					padding: 0 15px;
+					box-sizing: border-box;
+					
+					font-size: 16px;
+					text-align: center;
+					line-height: 34px;
+					color: #f0f0f0;
+					text-decoration: none;
+						
+					&:hover {
+						background-color: whitesmoke;
+						color: rgba(0,0,0,.7);
+					}
+					
+					div {
+						width: 100%;
+						height: 100%;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+				}
+			}
+		}
+	}
+	
+	.carousel-left {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 10%;
+		cursor: pointer;
+		
+		.carousel-arrow {
+			position: absolute;
+			top: 40%;
+			left: 15%;
+			height: 33px;
+			width: 23px;
+			background-image: url('http://www.foxmovies.com/images/arrow_left.png');
+		}
+	}
+	
+	.carousel-right {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 10%;
+		cursor: pointer;
+		
+		.carousel-arrow {
+			position: absolute;
+			top: 40%;
+			right: 15%;
+			height: 33px;
+			width: 23px;
+			background-image: url('http://www.foxmovies.com/images/arrow_right.png');
+		}
+	}
+}
